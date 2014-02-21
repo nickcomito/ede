@@ -1,0 +1,244 @@
+// Layout - Basic structure
+
+
+.checkbox label {
+	display: inline;
+	width: auto;
+	position: relative;
+	top: 1px;
+}
+
+.hidden, .collapsed {
+	margin-top: 5px;
+	display: none;
+	padding: 15px 0;
+	float: left;
+	width: 100%;
+	position: relative;
+
+	.close {
+		display: block;
+		position: absolute;
+		right: -8px;
+		top: -10px;
+		z-index: 10;
+	}
+
+	.close-bg {
+		display: block;
+		position: absolute;
+		right: -8px;
+		top: -10px;
+		z-index: 5;
+	}
+}
+
+.button-container {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+
+// Input Components
+// ----------------
+
+.inp-symbol {
+	float: left;
+	padding: 14px 8px 0 0;
+}
+
+
+// Tooltips
+// --------
+
+.tooltip-box {
+	position: absolute;
+	z-index: 10;
+	padding: 15px;
+	left: 0;
+
+	.arrow {
+		position: absolute;
+		bottom: -20px;
+		right: 31px;
+		width: 0px;
+		height: 0px;
+		z-index: 100;
+	}
+	
+	p, li {
+		margin-bottom: 10px;
+	}
+
+	li {
+		margin-bottom: 0;
+	}
+}
+
+.tip {
+	z-index: 10;
+	position: absolute;
+	right: 15px;
+	top: -12px;
+	padding: 2px 4px;
+}
+
+.component-section {
+	padding: 20px;
+	margin: 25px 0;
+	float: left;
+	@include border-box;
+	position: relative;
+	width: 100%;
+}
+
+.input-component, .data-component {
+	clear: both;
+	margin: 10px 0;
+	float: left;
+	width: 100%;
+	@include border-box;
+}
+
+// Nested Input Components
+.input-component .input-component {
+	padding-left: 15px;
+	@include border-box;
+}
+
+.description {
+	clear: both;
+	margin: 5px 0;
+	float: left;
+	width: 100%;
+	@include border-box;
+	padding: 8px;
+
+	p {
+		margin: 0;
+	}
+}
+
+.description.info {
+	margin-top: 0;
+
+	p {
+		margin: 0;
+	}
+
+	.button {
+		margin: 0;
+	}
+}
+
+
+
+
+// Labels
+// ------
+
+// Short Label
+.label-sm {
+	> label {
+		float: left;
+		width: 47.5%;
+		@include border-box;
+		padding-top: 15px;
+	}
+
+	// Short label fills full line when above long input
+	&.input-long label {
+		width: 100%;
+	}
+}
+
+// Medium Label
+.label-med {
+	> label {
+		float: left;
+		width: 47.5%;
+		@include border-box;
+		padding-top: 15px;
+	}
+
+	// Medium label fills full line when above long input
+	&.input-long label {
+		width: 100%;
+		padding-bottom: 0;
+	}
+}
+
+// Long Label
+.label-long {
+	> label {
+		float: none;
+		clear: both;
+		width: 100%;
+		@include border-box;
+		padding-top: 15px;
+	}
+
+	&.input-sm .input-box {
+		width: auto;
+		float: none;
+	}
+
+	&.input-med .input-box {
+		float: none;
+		width: auto;
+		input {
+			width: 50%;
+		}
+	}
+}
+
+// Force the smaller width in nested input components
+.input-long .label-sm label {
+	width: 47.5%;
+	padding-bottom: 3px;
+}
+
+// Input Boxes
+
+.input-box {
+	padding: 10px;
+	float: right;
+	width: 100%;
+}
+
+// Short Input Box
+.input-sm > .input-box {
+	width: 47.5%;
+
+	input[type="text"] {
+		width: 75px;
+	}
+}
+
+// Medium Input Box
+.input-med > .input-box {
+	width: 47.5%;
+
+	input[type="text"] {
+		width: 100%;
+	}
+}
+
+// Long Input Box
+.input-long > .input-box {
+	clear: both;
+	float: none;
+	margin-left: 0;
+	margin-right: 0;
+	width: auto;
+
+	input[type="text"] {
+		width: 100%;
+	}
+}
+
+.advanced .input-box {
+	float: none;
+	@include border-box;
+}

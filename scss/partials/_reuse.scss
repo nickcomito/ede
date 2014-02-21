@@ -1,0 +1,144 @@
+// Reusables – Mixins, common classes & components
+
+
+
+
+// COMPONENTS
+// ----------
+
+
+// Buttons
+
+.button {
+  padding: 8px 16px;
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Source Sans Pro";
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #0f4169;
+  @include background-image(linear-gradient(#0f4169, #0d395b));
+  @include box-shadow(0 2px 0px rgba(0,0,0,.2));
+  transition: none;
+
+  // Prevent icons from shifting content on hover
+  &:after {
+    content: '';
+    vertical-align: middle;
+  }
+
+  &:hover {
+    @include background-image(linear-gradient(#0d5893, #0b4d80));
+    color: #fff;
+  }
+
+  &:active {
+    color: #72eafa;
+    background: #0d395b;
+    @include box-shadow(inset 0 2px 2px rgba(0,0,0,.4));
+  }
+}
+
+.button.alt {
+  background-color: #0f6939;
+  @include background-image(linear-gradient(#0f6939, #0d5b32));
+
+  &:hover {
+    background-color: #11a559;
+    @include background-image(linear-gradient(#11a559, #0e8e4a));   
+  }
+
+  &:active {
+    color: #00ff7c;
+    background: #0d5b32;
+    @include box-shadow(inset 0 2px 2px rgba(0,0,0,.4));
+  }
+}
+
+.button.delete {
+  @include background-image(none);
+  @include box-shadow(none);
+  background: none;
+  color: #6e1010;
+
+  &:hover {
+    color: #ae0000;
+
+    &:after {
+      content: '\f05c';
+      font-family: 'fontAwesome';
+      margin-left: 6px;
+    }
+  }
+}
+
+.button.check {
+  @include background-image(none);
+  @include box-shadow(none);
+  background: none;
+  color: #0c5790;
+  
+  &:hover {
+    &:after {
+      color: #0c5790;
+      content: '\f05d';
+      font-family: 'fontAwesome';
+      margin-left: 6px;
+    }
+  }
+}
+
+.button.subtle {
+  background: #efefef;
+  color: #444;
+  padding: 4px 8px;
+  font-size: 15px;
+  @include background-image(none);
+}
+
+
+
+
+// MIXINS
+// ------
+
+// Gradient from top (default white) to bottom (default black) 
+@mixin gradient-tb($top: #fff, $bottom: #000) {  
+  @include background-image(linear-gradient(top, $top, $bottom));
+}
+
+// Gradient from left (default white) to right (default black)
+@mixin gradient-lr($left: #fff, $right: #000) {  
+  @include background-image(linear-gradient(left, $left, $right));
+}
+
+@mixin border-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Breakpoints
+@mixin breakpoint($point) {
+  @if $point == ocean {
+    @media (max-width: 960px) { @content; }
+  }
+  @else if $point == lake {
+    @media (max-width: 720px) { @content; }
+  }
+  @else if $point == pond {
+    @media (max-width: 640px)  { @content; }
+  }
+}
+
+
+
+// CLASSES
+// -------
+
+.nomargin {
+  margin: 0;
+}
