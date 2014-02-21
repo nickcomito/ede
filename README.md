@@ -6,8 +6,7 @@ E.D.E. is a form library that aims to make data entry enjoyable
 
 Minimal HTML
 
-`
-<pre>
+```
   <div class="component-section">
     <div class="input-component label-sm input-med">
       <label>Short Label</label>
@@ -16,5 +15,4 @@ Minimal HTML
       </div>
     </div>
   </div>
-</pre>
-`
+```
