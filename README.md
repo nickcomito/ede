@@ -32,6 +32,7 @@ The core of ede rests on a couple of divs and classes: the component section, th
 Requirements
 ------------
 * jQuery v2.0 (for tooltips and expand/collapse)
+* Font Awesome
 * SASS recommended
 
 
