@@ -31,17 +31,17 @@ The core of ede rests on a couple of divs and classes: the component section, th
 
 Requirements
 ------------
-jQuery v2.0 (for tooltips and expand/collapse)
-SASS recommended
+* jQuery v2.0 (for tooltips and expand/collapse)
+* SASS recommended
 
 
 Tested Browsers
 ---------------
-Google Chrome v32
-Firefox v27
-Internet Explorer v9,v10,v11
-Safari v6
-Opera v12
+* Google Chrome v32
+* Firefox v27
+* Internet Explorer v9,v10,v11
+* Safari v6
+* Opera v12
 
 
 Coming Soon
