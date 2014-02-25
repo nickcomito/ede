@@ -14,7 +14,6 @@
   margin: 8px 0;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Source Sans Pro";
   border-radius: 4px;
   color: #fff;
   text-decoration: none;
@@ -124,13 +123,13 @@
 // Breakpoints
 @mixin breakpoint($point) {
   @if $point == ocean {
-    @media (max-width: 960px) { @content; }
+    @media (min-width: 960px) { @content; }
   }
   @else if $point == lake {
-    @media (max-width: 720px) { @content; }
+    @media (min-width: 720px) { @content; }
   }
   @else if $point == pond {
-    @media (max-width: 640px)  { @content; }
+    @media (min-width: 560px)  { @content; }
   }
 }
 

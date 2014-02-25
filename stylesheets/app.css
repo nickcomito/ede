@@ -46,7 +46,6 @@ table {
   margin: 8px 0;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Source Sans Pro";
   border-radius: 4px;
   color: #fff;
   text-decoration: none;
@@ -60,12 +59,12 @@ table {
   box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
   transition: none;
 }
-/* line 27, ../scss/partials/_reuse.scss */
+/* line 26, ../scss/partials/_reuse.scss */
 .button:after {
   content: '';
   vertical-align: middle;
 }
-/* line 32, ../scss/partials/_reuse.scss */
+/* line 31, ../scss/partials/_reuse.scss */
 .button:hover {
   background-image: -moz-linear-gradient(#0d5893, #0b4d80);
   background-image: -o-linear-gradient(#0d5893, #0b4d80);
@@ -73,7 +72,7 @@ table {
   background-image: linear-gradient(#0d5893, #0b4d80);
   color: #fff;
 }
-/* line 37, ../scss/partials/_reuse.scss */
+/* line 36, ../scss/partials/_reuse.scss */
 .button:active {
   color: #72eafa;
   background: #0d395b;
@@ -82,7 +81,7 @@ table {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-/* line 44, ../scss/partials/_reuse.scss */
+/* line 43, ../scss/partials/_reuse.scss */
 .button.alt {
   background-color: #0f6939;
   background-image: -moz-linear-gradient(#0f6939, #0d5b32);
@@ -90,7 +89,7 @@ table {
   background-image: -webkit-linear-gradient(#0f6939, #0d5b32);
   background-image: linear-gradient(#0f6939, #0d5b32);
 }
-/* line 48, ../scss/partials/_reuse.scss */
+/* line 47, ../scss/partials/_reuse.scss */
 .button.alt:hover {
   background-color: #11a559;
   background-image: -moz-linear-gradient(#11a559, #0e8e4a);
@@ -98,7 +97,7 @@ table {
   background-image: -webkit-linear-gradient(#11a559, #0e8e4a);
   background-image: linear-gradient(#11a559, #0e8e4a);
 }
-/* line 53, ../scss/partials/_reuse.scss */
+/* line 52, ../scss/partials/_reuse.scss */
 .button.alt:active {
   color: #00ff7c;
   background: #0d5b32;
@@ -107,7 +106,7 @@ table {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-/* line 60, ../scss/partials/_reuse.scss */
+/* line 59, ../scss/partials/_reuse.scss */
 .button.delete {
   background-image: none;
   -moz-box-shadow: none;
@@ -116,18 +115,18 @@ table {
   background: none;
   color: #6e1010;
 }
-/* line 66, ../scss/partials/_reuse.scss */
+/* line 65, ../scss/partials/_reuse.scss */
 .button.delete:hover {
   color: #ae0000;
 }
-/* line 69, ../scss/partials/_reuse.scss */
+/* line 68, ../scss/partials/_reuse.scss */
 .button.delete:hover:after {
   content: '\f05c';
   font-family: 'fontAwesome';
   margin-left: 6px;
 }
 
-/* line 77, ../scss/partials/_reuse.scss */
+/* line 76, ../scss/partials/_reuse.scss */
 .button.check {
   background-image: none;
   -moz-box-shadow: none;
@@ -136,7 +135,7 @@ table {
   background: none;
   color: #0c5790;
 }
-/* line 84, ../scss/partials/_reuse.scss */
+/* line 83, ../scss/partials/_reuse.scss */
 .button.check:hover:after {
   color: #0c5790;
   content: '\f05d';
@@ -144,7 +143,7 @@ table {
   margin-left: 6px;
 }
 
-/* line 93, ../scss/partials/_reuse.scss */
+/* line 92, ../scss/partials/_reuse.scss */
 .button.subtle {
   background: #efefef;
   color: #444;
@@ -153,12 +152,12 @@ table {
   background-image: none;
 }
 
-/* line 142, ../scss/partials/_reuse.scss */
+/* line 141, ../scss/partials/_reuse.scss */
 .nomargin {
   margin: 0;
 }
 
-/* line 9, ../scss/partials/_base.scss */
+/* line 10, ../scss/partials/_base.scss */
 body {
   padding: 80px 5%;
   background: #fff;
@@ -166,12 +165,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 22, ../scss/partials/_base.scss */
+/* line 23, ../scss/partials/_base.scss */
 table {
   width: 100%;
 }
 
-/* line 26, ../scss/partials/_base.scss */
+/* line 27, ../scss/partials/_base.scss */
 td, th {
   border: 1px solid #ddd;
   padding: 0.5rem 0.625rem 0.625rem;
@@ -182,14 +181,14 @@ td, th {
   line-height: 1.125rem;
 }
 
-/* line 36, ../scss/partials/_base.scss */
+/* line 37, ../scss/partials/_base.scss */
 th {
   text-transform: uppercase;
   line-height: .75rem;
   font-size: 12px;
 }
 
-/* line 42, ../scss/partials/_base.scss */
+/* line 43, ../scss/partials/_base.scss */
 label {
   display: block;
   font-size: 14px;
@@ -200,7 +199,17 @@ label {
   line-height: 16px;
 }
 
-/* line 58, ../scss/partials/_base.scss */
+/* line 59, ../scss/partials/_base.scss */
+a {
+  text-decoration: underline;
+  font-size: 14px;
+}
+/* line 63, ../scss/partials/_base.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 68, ../scss/partials/_base.scss */
 p {
   font-family: inherit;
   font-weight: normal;
@@ -210,7 +219,25 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-/* line 67, ../scss/partials/_base.scss */
+/* line 77, ../scss/partials/_base.scss */
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/* line 82, ../scss/partials/_base.scss */
+strong, b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+/* line 87, ../scss/partials/_base.scss */
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+/* line 95, ../scss/partials/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -222,37 +249,37 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
 }
 
-/* line 78, ../scss/partials/_base.scss */
+/* line 106, ../scss/partials/_base.scss */
 h1 {
   font-size: 2.125rem;
 }
 
-/* line 80, ../scss/partials/_base.scss */
+/* line 108, ../scss/partials/_base.scss */
 h2 {
   font-size: 1.6875rem;
 }
 
-/* line 82, ../scss/partials/_base.scss */
+/* line 110, ../scss/partials/_base.scss */
 h3 {
   font-size: 1.375rem;
 }
 
-/* line 84, ../scss/partials/_base.scss */
+/* line 112, ../scss/partials/_base.scss */
 h4 {
   font-size: 1.125rem;
 }
 
-/* line 86, ../scss/partials/_base.scss */
+/* line 114, ../scss/partials/_base.scss */
 h5 {
   font-size: 1.125rem;
 }
 
-/* line 88, ../scss/partials/_base.scss */
+/* line 116, ../scss/partials/_base.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 90, ../scss/partials/_base.scss */
+/* line 118, ../scss/partials/_base.scss */
 hr {
   border: solid #dddddd;
   border-width: 1px 0 0;
@@ -261,32 +288,14 @@ hr {
   height: 0;
 }
 
-/* line 98, ../scss/partials/_base.scss */
-em, i {
-  font-style: italic;
-  line-height: inherit;
-}
-
-/* line 103, ../scss/partials/_base.scss */
-strong, b {
-  font-weight: bold;
-  line-height: inherit;
-}
-
-/* line 108, ../scss/partials/_base.scss */
-small {
-  font-size: 60%;
-  line-height: inherit;
-}
-
-/* line 113, ../scss/partials/_base.scss */
+/* line 126, ../scss/partials/_base.scss */
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
   color: #bd260d;
 }
 
-/* line 119, ../scss/partials/_base.scss */
+/* line 135, ../scss/partials/_base.scss */
 ul, ol, dl {
   font-size: 1rem;
   line-height: 1.6;
@@ -295,42 +304,41 @@ ul, ol, dl {
   font-family: inherit;
 }
 
-/* line 127, ../scss/partials/_base.scss */
+/* line 143, ../scss/partials/_base.scss */
 ul {
   list-style: disc;
   margin-left: 1.1rem;
 }
 
-/* line 132, ../scss/partials/_base.scss */
+/* line 148, ../scss/partials/_base.scss */
 ul li ul, ul li ol {
   margin-left: 1.25rem;
   margin-bottom: 0;
 }
 
-/* line 137, ../scss/partials/_base.scss */
+/* line 153, ../scss/partials/_base.scss */
 ol {
   margin-left: 1.4rem;
 }
-/* line 140, ../scss/partials/_base.scss */
+/* line 156, ../scss/partials/_base.scss */
 ol li ul, ol li ol {
   margin-left: 1.25rem;
   margin-bottom: 0;
 }
 
-/* line 146, ../scss/partials/_base.scss */
+/* line 162, ../scss/partials/_base.scss */
 dl dt {
   margin-bottom: 0.3rem;
   font-weight: bold;
 }
 
-/* line 151, ../scss/partials/_base.scss */
+/* line 167, ../scss/partials/_base.scss */
 dl dd {
   margin-bottom: 0.75rem;
 }
 
-/* line 153, ../scss/partials/_base.scss */
-abbr,
-acronym {
+/* line 172, ../scss/partials/_base.scss */
+abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
   color: #222222;
@@ -338,38 +346,38 @@ acronym {
   cursor: help;
 }
 
-/* line 162, ../scss/partials/_base.scss */
+/* line 180, ../scss/partials/_base.scss */
 abbr {
   text-transform: none;
 }
 
-/* line 164, ../scss/partials/_base.scss */
+/* line 182, ../scss/partials/_base.scss */
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #dddddd;
   line-height: 1.6;
 }
-/* line 170, ../scss/partials/_base.scss */
+/* line 188, ../scss/partials/_base.scss */
 blockquote p {
   line-height: 1.6;
 }
-/* line 174, ../scss/partials/_base.scss */
+/* line 192, ../scss/partials/_base.scss */
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
   color: #555555;
 }
-/* line 179, ../scss/partials/_base.scss */
+/* line 197, ../scss/partials/_base.scss */
 blockquote cite:before {
   content: "\2014 \0020";
 }
-/* line 183, ../scss/partials/_base.scss */
+/* line 201, ../scss/partials/_base.scss */
 blockquote cite a, blockquote cite a:visited {
   color: #555555;
 }
 
-/* line 195, ../scss/partials/_base.scss */
+/* line 213, ../scss/partials/_base.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -403,8 +411,7 @@ textarea {
   -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
   transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
 }
-
-/* line 229, ../scss/partials/_base.scss */
+/* line 246, ../scss/partials/_base.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
@@ -419,41 +426,23 @@ input[type="tel"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 textarea:focus {
-  -webkit-box-shadow: 0 0 5px #999999;
   -moz-box-shadow: 0 0 5px #999999;
+  -webkit-box-shadow: 0 0 5px #999999;
   box-shadow: 0 0 5px #999999;
   border-color: #999999;
-}
-
-/* line 249, ../scss/partials/_base.scss */
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-textarea:focus {
   background: #fafafa;
   border-color: #999999;
   outline: none;
 }
 
-/* Adjust margin for form elements below */
-/* line 269, ../scss/partials/_base.scss */
+/* line 256, ../scss/partials/_base.scss */
 input[type="file"],
 input[type="checkbox"],
 input[type="radio"] {
   margin: 0 0 1rem 0;
 }
 
-/* line 275, ../scss/partials/_base.scss */
+/* line 262, ../scss/partials/_base.scss */
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   display: inline-block;
@@ -463,13 +452,12 @@ input[type="radio"] + label {
   vertical-align: baseline;
 }
 
-/* Normalize file input width */
-/* line 284, ../scss/partials/_base.scss */
+/* line 271, ../scss/partials/_base.scss */
 input[type="file"] {
   width: 100%;
 }
 
-/* line 288, ../scss/partials/_base.scss */
+/* line 275, ../scss/partials/_base.scss */
 select {
   -webkit-appearance: none !important;
   background: #fafafa url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==") no-repeat;
@@ -482,7 +470,7 @@ select {
   border-radius: 0;
   width: 100%;
 }
-/* line 301, ../scss/partials/_base.scss */
+/* line 287, ../scss/partials/_base.scss */
 select:hover {
   background: #f3f3f3 url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==") no-repeat;
   background-position-x: 97%;
@@ -490,29 +478,28 @@ select:hover {
   border-color: #999999;
 }
 
-/* line 309, ../scss/partials/_base.scss */
+/* line 295, ../scss/partials/_base.scss */
 select::-ms-expand {
   display: none;
 }
 
 @-moz-document url-prefix() {
-  /* line 314, ../scss/partials/_base.scss */
+  /* line 300, ../scss/partials/_base.scss */
   select {
     background: #fafafa;
   }
-  /* line 317, ../scss/partials/_base.scss */
+  /* line 303, ../scss/partials/_base.scss */
   select:hover {
     background: #f3f3f3;
   }
 }
-/* We add basic fieldset styling */
-/* line 324, ../scss/partials/_base.scss */
+/* line 310, ../scss/partials/_base.scss */
 fieldset {
   border: solid 1px #dddddd;
   padding: 1.25rem;
   margin: 1.125rem 0;
 }
-/* line 329, ../scss/partials/_base.scss */
+/* line 315, ../scss/partials/_base.scss */
 fieldset legend {
   font-weight: bold;
   background: white;
@@ -521,89 +508,7 @@ fieldset legend {
   margin-left: -0.1875rem;
 }
 
-/* line 4, ../scss/partials/_layout.scss */
-.checkbox label {
-  display: inline;
-  width: auto;
-  position: relative;
-  top: 1px;
-}
-
-/* line 11, ../scss/partials/_layout.scss */
-.hidden, .collapsed {
-  margin-top: 5px;
-  display: none;
-  padding: 15px 0;
-  float: left;
-  width: 100%;
-  position: relative;
-}
-/* line 19, ../scss/partials/_layout.scss */
-.hidden .close, .collapsed .close {
-  display: block;
-  position: absolute;
-  right: -8px;
-  top: -10px;
-  z-index: 10;
-}
-/* line 27, ../scss/partials/_layout.scss */
-.hidden .close-bg, .collapsed .close-bg {
-  display: block;
-  position: absolute;
-  right: -8px;
-  top: -10px;
-  z-index: 5;
-}
-
-/* line 36, ../scss/partials/_layout.scss */
-.button-container {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 20px;
-}
-
-/* line 46, ../scss/partials/_layout.scss */
-.inp-symbol {
-  float: left;
-  padding: 14px 8px 0 0;
-}
-
-/* line 55, ../scss/partials/_layout.scss */
-.tooltip-box {
-  position: absolute;
-  z-index: 10;
-  padding: 15px;
-  left: 0;
-}
-/* line 61, ../scss/partials/_layout.scss */
-.tooltip-box .arrow {
-  position: absolute;
-  bottom: -20px;
-  right: 31px;
-  width: 0px;
-  height: 0px;
-  z-index: 100;
-}
-/* line 70, ../scss/partials/_layout.scss */
-.tooltip-box p, .tooltip-box li {
-  margin-bottom: 10px;
-}
-/* line 74, ../scss/partials/_layout.scss */
-.tooltip-box li {
-  margin-bottom: 0;
-}
-
-/* line 79, ../scss/partials/_layout.scss */
-.tip {
-  z-index: 10;
-  position: absolute;
-  right: 15px;
-  top: -12px;
-  padding: 2px 4px;
-}
-
-/* line 87, ../scss/partials/_layout.scss */
+/* line 9, ../scss/partials/_layout.scss */
 .component-section {
   padding: 20px;
   margin: 25px 0;
@@ -616,7 +521,7 @@ fieldset legend {
   width: 100%;
 }
 
-/* line 96, ../scss/partials/_layout.scss */
+/* line 18, ../scss/partials/_layout.scss */
 .input-component, .data-component {
   clear: both;
   margin: 10px 0;
@@ -628,7 +533,7 @@ fieldset legend {
   box-sizing: border-box;
 }
 
-/* line 105, ../scss/partials/_layout.scss */
+/* line 29, ../scss/partials/_layout.scss */
 .input-component .input-component {
   padding-left: 15px;
   -webkit-box-sizing: border-box;
@@ -637,7 +542,83 @@ fieldset legend {
   box-sizing: border-box;
 }
 
+/* line 40, ../scss/partials/_layout.scss */
+.checkbox label {
+  display: inline;
+  width: auto;
+  position: relative;
+  top: 1px;
+}
+
+/* line 47, ../scss/partials/_layout.scss */
+.hidden, .collapsed {
+  margin-top: 5px;
+  display: none;
+  padding: 15px 0;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+/* line 55, ../scss/partials/_layout.scss */
+.hidden .close, .collapsed .close {
+  display: block;
+  position: absolute;
+  right: -8px;
+  top: -10px;
+  z-index: 10;
+}
+/* line 63, ../scss/partials/_layout.scss */
+.hidden .close-bg, .collapsed .close-bg {
+  display: block;
+  position: absolute;
+  right: -8px;
+  top: -10px;
+  z-index: 5;
+}
+
+/* line 73, ../scss/partials/_layout.scss */
+.button-container {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* line 86, ../scss/partials/_layout.scss */
+.tooltip-box {
+  position: absolute;
+  z-index: 10;
+  padding: 15px;
+  left: 0;
+}
+/* line 92, ../scss/partials/_layout.scss */
+.tooltip-box .arrow {
+  position: absolute;
+  bottom: -20px;
+  right: 31px;
+  width: 0px;
+  height: 0px;
+  z-index: 100;
+}
+/* line 101, ../scss/partials/_layout.scss */
+.tooltip-box p, .tooltip-box li {
+  margin-bottom: 10px;
+}
+/* line 105, ../scss/partials/_layout.scss */
+.tooltip-box li {
+  margin-bottom: 0;
+}
+
 /* line 110, ../scss/partials/_layout.scss */
+.tip {
+  z-index: 10;
+  position: absolute;
+  right: 15px;
+  top: -12px;
+  padding: 2px 4px;
+}
+
+/* line 118, ../scss/partials/_layout.scss */
 .description {
   clear: both;
   margin: 5px 0;
@@ -649,56 +630,67 @@ fieldset legend {
   box-sizing: border-box;
   padding: 8px;
 }
-/* line 118, ../scss/partials/_layout.scss */
+/* line 126, ../scss/partials/_layout.scss */
 .description p {
   margin: 0;
 }
-
-/* line 123, ../scss/partials/_layout.scss */
+/* line 130, ../scss/partials/_layout.scss */
 .description.info {
   margin-top: 0;
 }
-/* line 126, ../scss/partials/_layout.scss */
+/* line 133, ../scss/partials/_layout.scss */
 .description.info p {
   margin: 0;
 }
-/* line 130, ../scss/partials/_layout.scss */
+/* line 137, ../scss/partials/_layout.scss */
 .description.info .button {
   margin: 0;
 }
 
-/* line 143, ../scss/partials/_layout.scss */
+/* line 153, ../scss/partials/_layout.scss */
 .label-sm > label {
-  float: left;
-  width: 47.5%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 15px;
+  float: left;
+  width: 100%;
 }
-/* line 151, ../scss/partials/_layout.scss */
+@media (min-width: 560px) {
+  /* line 153, ../scss/partials/_layout.scss */
+  .label-sm > label {
+    width: 47.5%;
+  }
+}
+/* line 164, ../scss/partials/_layout.scss */
 .label-sm.input-long label {
   width: 100%;
 }
 
-/* line 158, ../scss/partials/_layout.scss */
+/* line 173, ../scss/partials/_layout.scss */
 .label-med > label {
   float: left;
-  width: 47.5%;
+  width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 15px;
 }
-/* line 166, ../scss/partials/_layout.scss */
+@media (min-width: 560px) {
+  /* line 173, ../scss/partials/_layout.scss */
+  .label-med > label {
+    width: 47.5%;
+  }
+}
+/* line 184, ../scss/partials/_layout.scss */
 .label-med.input-long label {
   width: 100%;
   padding-bottom: 0;
 }
 
-/* line 174, ../scss/partials/_layout.scss */
+/* line 194, ../scss/partials/_layout.scss */
 .label-long > label {
   float: none;
   clear: both;
@@ -709,53 +701,74 @@ fieldset legend {
   box-sizing: border-box;
   padding-top: 15px;
 }
-/* line 182, ../scss/partials/_layout.scss */
+/* line 202, ../scss/partials/_layout.scss */
 .label-long.input-sm .input-box {
   width: auto;
   float: none;
 }
-/* line 187, ../scss/partials/_layout.scss */
+/* line 207, ../scss/partials/_layout.scss */
 .label-long.input-med .input-box {
   float: none;
   width: auto;
+  clear: both;
 }
-/* line 190, ../scss/partials/_layout.scss */
+/* line 211, ../scss/partials/_layout.scss */
 .label-long.input-med .input-box input {
-  width: 50%;
+  width: auto;
+}
+@media (min-width: 560px) {
+  /* line 211, ../scss/partials/_layout.scss */
+  .label-long.input-med .input-box input {
+    width: 50%;
+  }
 }
 
-/* line 197, ../scss/partials/_layout.scss */
-.input-long .label-sm label {
-  width: 47.5%;
-  padding-bottom: 3px;
-}
-
-/* line 204, ../scss/partials/_layout.scss */
+/* line 226, ../scss/partials/_layout.scss */
 .input-box {
   padding: 10px;
   float: right;
   width: 100%;
 }
 
-/* line 211, ../scss/partials/_layout.scss */
+/* line 235, ../scss/partials/_layout.scss */
 .input-sm > .input-box {
-  width: 47.5%;
+  width: auto;
+  clear: both;
+  float: none;
 }
-/* line 214, ../scss/partials/_layout.scss */
+@media (min-width: 560px) {
+  /* line 235, ../scss/partials/_layout.scss */
+  .input-sm > .input-box {
+    width: 47.5%;
+    clear: none;
+    float: right;
+  }
+}
+/* line 245, ../scss/partials/_layout.scss */
 .input-sm > .input-box input[type="text"] {
   width: 75px;
 }
 
-/* line 220, ../scss/partials/_layout.scss */
+/* line 253, ../scss/partials/_layout.scss */
 .input-med > .input-box {
-  width: 47.5%;
+  width: auto;
+  float: none;
+  clear: both;
 }
-/* line 223, ../scss/partials/_layout.scss */
+@media (min-width: 560px) {
+  /* line 253, ../scss/partials/_layout.scss */
+  .input-med > .input-box {
+    float: right;
+    clear: none;
+    width: 47.5%;
+  }
+}
+/* line 263, ../scss/partials/_layout.scss */
 .input-med > .input-box input[type="text"] {
   width: 100%;
 }
 
-/* line 229, ../scss/partials/_layout.scss */
+/* line 271, ../scss/partials/_layout.scss */
 .input-long > .input-box {
   clear: both;
   float: none;
@@ -763,12 +776,24 @@ fieldset legend {
   margin-right: 0;
   width: auto;
 }
-/* line 236, ../scss/partials/_layout.scss */
+/* line 278, ../scss/partials/_layout.scss */
 .input-long > .input-box input[type="text"] {
   width: 100%;
 }
 
-/* line 241, ../scss/partials/_layout.scss */
+/* line 284, ../scss/partials/_layout.scss */
+.input-long .label-sm label {
+  width: auto;
+  padding-bottom: 3px;
+}
+@media (min-width: 560px) {
+  /* line 284, ../scss/partials/_layout.scss */
+  .input-long .label-sm label {
+    width: 47.5%;
+  }
+}
+
+/* line 292, ../scss/partials/_layout.scss */
 .advanced .input-box {
   float: none;
   -webkit-box-sizing: border-box;
@@ -777,108 +802,7 @@ fieldset legend {
   box-sizing: border-box;
 }
 
-/* line 3, ../scss/partials/_design.scss */
-a {
-  color: #e78339;
-  text-decoration: underline;
-  font-size: 14px;
-}
-/* line 8, ../scss/partials/_design.scss */
-a:hover {
-  color: #e78339;
-  text-decoration: none;
-}
-
-/* line 14, ../scss/partials/_design.scss */
-.advanced.active {
-  color: #ccc;
-  text-decoration: none;
-}
-
-/* line 19, ../scss/partials/_design.scss */
-.hidden, .collapsed {
-  display: none;
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 15px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 26, ../scss/partials/_design.scss */
-.hidden .inp-box, .collapsed .inp-box {
-  background: #e5e5e5;
-}
-/* line 30, ../scss/partials/_design.scss */
-.hidden .close, .collapsed .close {
-  color: #444;
-  display: block;
-  font-size: 20px;
-  cursor: pointer;
-  transition: color .2s ease-in-out;
-}
-/* line 37, ../scss/partials/_design.scss */
-.hidden .close:hover, .collapsed .close:hover {
-  color: #f47f43;
-}
-/* line 42, ../scss/partials/_design.scss */
-.hidden .close-bg, .collapsed .close-bg {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-}
-
-/* line 51, ../scss/partials/_design.scss */
-.tooltip-box {
-  display: none;
-  background: #f6ec96;
-  border-radius: 10px;
-  color: #5c574b;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
-  line-height: 16px;
-}
-/* line 60, ../scss/partials/_design.scss */
-.tooltip-box .arrow {
-  display: block;
-  border-style: solid;
-  border-width: 0 20px 20px 0;
-  border-color: transparent #e4db8b transparent transparent;
-}
-/* line 67, ../scss/partials/_design.scss */
-.tooltip-box p, .tooltip-box li {
-  font-size: 14px;
-  line-height: 16px;
-}
-/* line 72, ../scss/partials/_design.scss */
-.tooltip-box.inactive {
-  display: none;
-}
-/* line 76, ../scss/partials/_design.scss */
-.tooltip-box.active {
-  display: block;
-}
-
-/* line 81, ../scss/partials/_design.scss */
-.tip {
-  color: #444;
-  display: block;
-  font-size: 20px;
-  transition: color .2s ease-in-out;
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-}
-/* line 91, ../scss/partials/_design.scss */
-.tip:hover {
-  color: #f47f43;
-}
-
-/* line 96, ../scss/partials/_design.scss */
+/* line 7, ../scss/partials/_design.scss */
 .component-section {
   border: 3px solid #efefef;
   background: #fff;
@@ -893,112 +817,197 @@ a:hover {
   width: 100%;
 }
 
-/* line 107, ../scss/partials/_design.scss */
+/* line 18, ../scss/partials/_design.scss */
 .input-component, .data-component {
   clear: both;
   margin: 10px 0;
   float: left;
   width: 100%;
 }
-/* line 113, ../scss/partials/_design.scss */
-.input-component .inp-box, .data-component .inp-box {
+/* line 24, ../scss/partials/_design.scss */
+.input-component .input-box, .data-component .input-box {
   background: #efefef;
 }
-/* line 118, ../scss/partials/_design.scss */
+/* line 29, ../scss/partials/_design.scss */
+.input-component:hover .input-box, .data-component:hover .input-box {
+  background: #ececec;
+}
+/* line 33, ../scss/partials/_design.scss */
 .input-component:hover label, .data-component:hover label {
   color: #333;
   border-color: #e5e5e5;
 }
 
-/* line 126, ../scss/partials/_design.scss */
+/* line 43, ../scss/partials/_design.scss */
 .input-component .input-component {
   border-left: 2px solid #e5e5e5;
 }
 
-/* line 131, ../scss/partials/_design.scss */
+/* line 50, ../scss/partials/_design.scss */
 .input-component .collapsed .input-component {
   border-left: none;
 }
 
-/* line 136, ../scss/partials/_design.scss */
-.input-component.active .inp-box {
+/* line 55, ../scss/partials/_design.scss */
+.input-component.active .input-box {
   background: #e5e5e5;
 }
-/* line 140, ../scss/partials/_design.scss */
+/* line 59, ../scss/partials/_design.scss */
 .input-component.active input {
   border: 1px solid #e5e5e5;
 }
-/* line 144, ../scss/partials/_design.scss */
-.input-component.active label, .input-component.active .inp-symbol {
+/* line 63, ../scss/partials/_design.scss */
+.input-component.active label {
   color: #333;
 }
 
-/* line 149, ../scss/partials/_design.scss */
+/* line 78, ../scss/partials/_design.scss */
+.label-sm > label {
+  border-bottom: 2px solid #efefef;
+}
+/* line 83, ../scss/partials/_design.scss */
+.label-sm.input-long label {
+  border-bottom: 0;
+}
+
+/* line 88, ../scss/partials/_design.scss */
+.active label.label-sm {
+  border-bottom-color: #e5e5e5;
+}
+
+/* line 96, ../scss/partials/_design.scss */
+.label-med.input-long label {
+  border-bottom: 0;
+}
+
+/* line 102, ../scss/partials/_design.scss */
+.input-long .label-sm label {
+  border-bottom: 2px solid #efefef;
+}
+
+/* line 112, ../scss/partials/_design.scss */
+.input-box {
+  background: #efefef;
+  border-radius: 2px;
+}
+
+/* line 120, ../scss/partials/_design.scss */
+.collapsed {
+  display: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 127, ../scss/partials/_design.scss */
+.collapsed .input-box {
+  background: #e5e5e5;
+}
+/* line 131, ../scss/partials/_design.scss */
+.collapsed .close {
+  color: #444;
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+}
+/* line 138, ../scss/partials/_design.scss */
+.collapsed .close:hover {
+  color: #f47f43;
+}
+/* line 143, ../scss/partials/_design.scss */
+.collapsed .close-bg {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+}
+
+/* line 150, ../scss/partials/_design.scss */
+.expandable.active {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* line 160, ../scss/partials/_design.scss */
+.tooltip-box {
+  display: none;
+  background: #f6ec96;
+  border-radius: 10px;
+  color: #5c574b;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 16px;
+}
+/* line 169, ../scss/partials/_design.scss */
+.tooltip-box.inactive {
+  display: none;
+}
+/* line 173, ../scss/partials/_design.scss */
+.tooltip-box.active {
+  display: block;
+}
+/* line 177, ../scss/partials/_design.scss */
+.tooltip-box .arrow {
+  display: block;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent #e4db8b transparent transparent;
+}
+/* line 184, ../scss/partials/_design.scss */
+.tooltip-box p, .tooltip-box li {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* line 191, ../scss/partials/_design.scss */
+.tip {
+  color: #444;
+  display: block;
+  font-size: 20px;
+  transition: color .2s ease-in-out;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+/* line 201, ../scss/partials/_design.scss */
+.tip:hover {
+  color: #999;
+}
+
+/* line 206, ../scss/partials/_design.scss */
 .description {
   background: #e6f3f5;
   color: #388da1;
   font-style: italic;
 }
-/* line 154, ../scss/partials/_design.scss */
+/* line 211, ../scss/partials/_design.scss */
 .description p {
   font-size: 13px;
   line-height: 16px;
 }
-
-/* line 160, ../scss/partials/_design.scss */
+/* line 216, ../scss/partials/_design.scss */
 .description.info {
   background: #efefef;
   font-style: normal;
   color: #666;
 }
-/* line 165, ../scss/partials/_design.scss */
+/* line 221, ../scss/partials/_design.scss */
 .description.info p {
   font-size: 14px;
   line-height: 18px;
 }
-/* line 170, ../scss/partials/_design.scss */
+/* line 226, ../scss/partials/_design.scss */
 .description.info .button {
   font-weight: 500;
 }
 
-/* line 175, ../scss/partials/_design.scss */
+/* line 232, ../scss/partials/_design.scss */
 .autocomplete {
-  background: url(../images/ajax-loader.gif) no-repeat 95%;
-}
-
-/* line 185, ../scss/partials/_design.scss */
-.active label.label-sm {
-  border-bottom-color: #e5e5e5;
-}
-
-/* line 192, ../scss/partials/_design.scss */
-.label-sm > label {
-  border-bottom: 2px solid #efefef;
-}
-/* line 197, ../scss/partials/_design.scss */
-.label-sm.input-long label {
-  border-bottom: 0;
-}
-
-/* line 205, ../scss/partials/_design.scss */
-.label-med.input-long label {
-  border-bottom: 0;
-}
-
-/* line 211, ../scss/partials/_design.scss */
-.input-long .label-sm label {
-  border-bottom: 2px solid #efefef;
-}
-
-/* line 220, ../scss/partials/_design.scss */
-.inp-symbol {
-  float: left;
-  padding: 14px 8px 0 0;
-  color: #666;
-}
-
-/* line 226, ../scss/partials/_design.scss */
-.input-box {
-  background: #efefef;
-  border-radius: 2px;
+  background: url(../images/ajax-loader.gif) no-repeat 98%;
 }

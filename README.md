@@ -11,6 +11,7 @@ Benefits
 * Easy to override
 * Percentage-based structure
 * Component-based Design
+* Mobile Ready
 
 
 Minimal HTML
@@ -48,6 +49,5 @@ Tested Browsers
 Coming Soon
 -----------
 
-* Mobile Styles
 * Skins
 * Bootstrap Integration

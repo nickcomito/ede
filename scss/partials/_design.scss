@@ -1,29 +1,130 @@
-// Design – Default Skin
+// Design – Base design styles
+// Override these in another stylesheet file
 
-a {
-	color: #e78339;
-	text-decoration: underline;
-	font-size: 14px;
+
+
+
+.component-section {
+	border: 3px solid #efefef;
+	background: #fff;
+	padding: 20px;
+	margin: 25px 0;
+	float: left;
+	@include border-box;
+	position: relative;
+	width: 100%;
+}
+
+.input-component, .data-component {
+	clear: both;
+	margin: 10px 0;
+	float: left;
+	width: 100%;
+
+	.input-box {
+		background: #efefef;
+	}
 
 	&:hover {
-		color: #e78339;
-		text-decoration: none;
+		.input-box {
+			background: #ececec;
+		}
+
+		label {
+			color: #333;
+			border-color: #e5e5e5;
+		}
 	}
 }
 
-.advanced.active {
-	color: #ccc;
-	text-decoration: none;
+
+// Nested Input Components
+
+.input-component .input-component {
+	border-left: 2px solid #e5e5e5;
 }
 
-.hidden, .collapsed {
+
+// Nested input components inside collapsed containers
+
+.input-component .collapsed .input-component {
+	border-left: none;
+}
+
+.input-component.active {
+	.input-box {
+		background: #e5e5e5;
+	}
+
+	input {
+		border: 1px solid #e5e5e5;
+	}
+
+	label {
+		color: #333;
+	}
+}
+
+
+
+
+// Label Components
+// ----------------
+
+
+// Short Label
+
+.label-sm {
+	> label {
+		border-bottom: 2px solid #efefef;
+	}
+
+	// Short label fills full line when above long input
+	&.input-long label {
+		border-bottom: 0;
+	}
+}
+
+.active label.label-sm {
+	border-bottom-color: #e5e5e5;
+}
+
+
+// Medium Label
+
+.label-med {
+	&.input-long label {
+		border-bottom: 0;
+	}
+}
+
+// Force the smaller width in nested input components
+.input-long .label-sm label {
+	border-bottom: 2px solid #efefef;
+}
+
+
+
+
+// Input Components
+// ----------------
+
+.input-box {
+	background: #efefef;
+	border-radius: 2px;
+}
+
+
+// Expand & Collapse Containers
+
+.collapsed {
 	display: none;
 	background: #fff;
 	border: 1px solid #ccc;
 	padding: 15px;
 	@include border-box;
 
-	.inp-box {
+	.input-box {
 		background: #e5e5e5;
 	}
 
@@ -46,7 +147,15 @@ a {
 	}
 }
 
+.expandable.active {
+	color: #ccc;
+	text-decoration: none;
+}
 
+
+
+// Tooltips
+// --------
 
 .tooltip-box {
 	display: none;
@@ -56,6 +165,14 @@ a {
 	box-shadow: 2px 4px 8px rgba(0,0,0,.2);
 	font-size: 14px;
 	line-height: 16px;
+
+	&.inactive {
+		display: none;
+	}
+
+	&.active {
+		display: block;
+	}
 
 	.arrow {
 		display: block;
@@ -68,16 +185,9 @@ a {
 		font-size: 14px;
 		line-height: 16px;
 	}
-
-	&.inactive {
-		display: none;
-	}
-
-	&.active {
-		display: block;
-	}
 }
 
+// Tooltip Link/Button
 .tip {
 	color: #444;
 	display: block;
@@ -89,60 +199,7 @@ a {
 	@include border-radius(30px);
 
 	&:hover {
-		color: #f47f43;
-	}
-}
-
-.component-section {
-	border: 3px solid #efefef;
-	background: #fff;
-	padding: 20px;
-	margin: 25px 0;
-	float: left;
-	@include border-box;
-	position: relative;
-	width: 100%;
-}
-
-.input-component, .data-component {
-	clear: both;
-	margin: 10px 0;
-	float: left;
-	width: 100%;
-
-	.inp-box {
-		background: #efefef;
-	}
-
-	&:hover {
-		label {
-			color: #333;
-			border-color: #e5e5e5;
-		}
-	}
-}
-
-// Nested Input Components
-.input-component .input-component {
-	border-left: 2px solid #e5e5e5;
-}
-
-// Nested Input Components (Insided Collapsed Containers)
-.input-component .collapsed .input-component {
-	border-left: none;
-}
-
-.input-component.active {
-	.inp-box {
-		background: #e5e5e5;
-	}
-
-	input {
-		border: 1px solid #e5e5e5;
-	}
-
-	label, .inp-symbol {
-		color: #333;
+		color: #999;
 	}
 }
 
@@ -155,75 +212,23 @@ a {
 		font-size: 13px;
 		line-height: 16px;
 	}
-}
 
-.description.info {
-	background: #efefef;
-	font-style: normal;
-	color: #666;
+	&.info {
+		background: #efefef;
+		font-style: normal;
+		color: #666;
 
-	p {
-		font-size: 14px;
-		line-height: 18px;
-	}
+		p {
+			font-size: 14px;
+			line-height: 18px;
+		}
 
-	.button {
-		font-weight: 500;
+		.button {
+			font-weight: 500;
+		}
 	}
 }
 
 .autocomplete {
-	background: url(../images/ajax-loader.gif) no-repeat 95%;
-}
-
-
-
-
-// Label Components
-// ----------------
-
-.active label.label-sm {
-	border-bottom-color: #e5e5e5;
-}
-
-// Short Label
-
-.label-sm {
-	> label {
-		border-bottom: 2px solid #efefef;
-	}
-
-	// Short label fills full line when above long input
-	&.input-long label {
-		border-bottom: 0;
-	}
-}
-
-// Medium Label
-
-.label-med {
-	&.input-long label {
-		border-bottom: 0;
-	}
-}
-
-// Force the smaller width in nested input components
-.input-long .label-sm label {
-	border-bottom: 2px solid #efefef;
-}
-
-
-// Input Components
-// ----------------
-
-// Place prefixes in HTML like so: <div class="inp-symbol">$</div><input>
-.inp-symbol {
-	float: left;
-	padding: 14px 8px 0 0;
-	color: #666;
-}
-
-.input-box {
-	background: #efefef;
-	border-radius: 2px;
+	background: url(../images/ajax-loader.gif) no-repeat 98%;
 }

@@ -32,7 +32,7 @@ $(document).ready(function() {
 	});
 
 	/* Open a collapsed container */
-	$(document).on('click', '.advanced', function(e) {
+	$(document).on('click', '.expandable', function(e) {
 		var collapsed = $(this).parents("div").children(".collapsed");
 		$(collapsed).slideToggle('fast');
 		$(this).toggleClass("active");
@@ -42,6 +42,6 @@ $(document).ready(function() {
 	$(document).on('click', '.close', function(e) {
 		var pContainer = $(this).parents(".collapsed");
 		$(pContainer).slideToggle('fast');
-		$(".advanced").removeClass("active");
+		$(".expandable").removeClass("active");
 	});
 });

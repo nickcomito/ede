@@ -1,5 +1,41 @@
-// Layout - Basic structure
+// Layout - Basic structure (margin, padding, position, floats) for all components
 
+
+
+
+// Component Containers
+// --------------------
+
+.component-section {
+	padding: 20px;
+	margin: 25px 0;
+	float: left;
+	@include border-box;
+	position: relative;
+	width: 100%;
+}
+
+.input-component, .data-component {
+	clear: both;
+	margin: 10px 0;
+	float: left;
+	width: 100%;
+	@include border-box;
+}
+
+
+// Nested Input Components
+
+.input-component .input-component {
+	padding-left: 15px;
+	@include border-box;
+}
+
+
+
+
+// Input Components
+// ----------------
 
 .checkbox label {
 	display: inline;
@@ -33,6 +69,7 @@
 	}
 }
 
+// For grouping buttons
 .button-container {
 	clear: both;
 	float: left;
@@ -40,13 +77,7 @@
 	margin-top: 20px;
 }
 
-// Input Components
-// ----------------
 
-.inp-symbol {
-	float: left;
-	padding: 14px 8px 0 0;
-}
 
 
 // Tooltips
@@ -84,29 +115,6 @@
 	padding: 2px 4px;
 }
 
-.component-section {
-	padding: 20px;
-	margin: 25px 0;
-	float: left;
-	@include border-box;
-	position: relative;
-	width: 100%;
-}
-
-.input-component, .data-component {
-	clear: both;
-	margin: 10px 0;
-	float: left;
-	width: 100%;
-	@include border-box;
-}
-
-// Nested Input Components
-.input-component .input-component {
-	padding-left: 15px;
-	@include border-box;
-}
-
 .description {
 	clear: both;
 	margin: 5px 0;
@@ -118,17 +126,17 @@
 	p {
 		margin: 0;
 	}
-}
 
-.description.info {
-	margin-top: 0;
+	&.info {
+		margin-top: 0;
 
-	p {
-		margin: 0;
-	}
+		p {
+			margin: 0;
+		}
 
-	.button {
-		margin: 0;
+		.button {
+			margin: 0;
+		}
 	}
 }
 
@@ -138,13 +146,18 @@
 // Labels
 // ------
 
+
 // Short Label
+
 .label-sm {
 	> label {
-		float: left;
-		width: 47.5%;
 		@include border-box;
 		padding-top: 15px;
+		float: left;
+		width: 100%;
+		@include breakpoint(pond) {
+			width: 47.5%;
+		}
 	}
 
 	// Short label fills full line when above long input
@@ -153,13 +166,18 @@
 	}
 }
 
+
 // Medium Label
+
 .label-med {
 	> label {
 		float: left;
-		width: 47.5%;
+		width: 100%;
 		@include border-box;
 		padding-top: 15px;
+		@include breakpoint(pond) {
+			width: 47.5%;
+		}
 	}
 
 	// Medium label fills full line when above long input
@@ -169,7 +187,9 @@
 	}
 }
 
+
 // Long Label
+
 .label-long {
 	> label {
 		float: none;
@@ -187,19 +207,21 @@
 	&.input-med .input-box {
 		float: none;
 		width: auto;
+		clear: both;
 		input {
-			width: 50%;
+			width: auto;
+			@include breakpoint(pond) {
+				width: 50%;
+			}
 		}
 	}
 }
 
-// Force the smaller width in nested input components
-.input-long .label-sm label {
-	width: 47.5%;
-	padding-bottom: 3px;
-}
+
+
 
 // Input Boxes
+// -----------
 
 .input-box {
 	padding: 10px;
@@ -207,25 +229,45 @@
 	width: 100%;
 }
 
+
 // Short Input Box
+
 .input-sm > .input-box {
-	width: 47.5%;
+	width: auto;
+	clear: both;
+	float: none;
+	@include breakpoint(pond) {
+		width: 47.5%;
+		clear: none;
+		float: right;
+	}
 
 	input[type="text"] {
 		width: 75px;
 	}
 }
 
+
 // Medium Input Box
+
 .input-med > .input-box {
-	width: 47.5%;
+	width: auto;
+	float: none;
+	clear: both;
+	@include breakpoint(pond) {
+		float: right;
+		clear: none;
+		width: 47.5%;
+	}
 
 	input[type="text"] {
 		width: 100%;
 	}
 }
 
+
 // Long Input Box
+
 .input-long > .input-box {
 	clear: both;
 	float: none;
@@ -235,6 +277,15 @@
 
 	input[type="text"] {
 		width: 100%;
+	}
+}
+
+// Force the smaller width in nested input components
+.input-long .label-sm label {
+	width: auto;
+	padding-bottom: 3px;
+	@include breakpoint(pond) {
+		width: 47.5%;
 	}
 }
 
