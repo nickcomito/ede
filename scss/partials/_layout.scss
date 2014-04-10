@@ -97,7 +97,7 @@
 		height: 0px;
 		z-index: 100;
 	}
-	
+
 	p, li {
 		margin-bottom: 10px;
 	}
@@ -270,10 +270,9 @@
 
 .input-long > .input-box {
 	clear: both;
-	float: none;
 	margin-left: 0;
 	margin-right: 0;
-	width: auto;
+	width: 100%;
 
 	input[type="text"] {
 		width: 100%;
