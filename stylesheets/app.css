@@ -542,7 +542,7 @@ fieldset legend {
   box-sizing: border-box;
 }
 
-/* line 40, ../scss/partials/_layout.scss */
+/* line 43, ../scss/partials/_layout.scss */
 .checkbox label {
   display: inline;
   width: auto;
@@ -550,7 +550,65 @@ fieldset legend {
   top: 1px;
 }
 
-/* line 47, ../scss/partials/_layout.scss */
+/* line 50, ../scss/partials/_layout.scss */
+.checkbox.label-sm > label {
+  border-bottom: 0;
+  padding-top: 15px;
+  width: 100%;
+}
+@media (min-width: 560px) {
+  /* line 50, ../scss/partials/_layout.scss */
+  .checkbox.label-sm > label {
+    width: 45%;
+  }
+}
+
+/* line 60, ../scss/partials/_layout.scss */
+.checkbox.label-long > label {
+  width: 85%;
+}
+
+/* line 64, ../scss/partials/_layout.scss */
+.checkbox input[type="checkbox"] {
+  float: left;
+  margin-top: 18px;
+}
+
+/* line 71, ../scss/partials/_layout.scss */
+.checkbox .input-component label {
+  padding-top: 10px;
+}
+/* line 72, ../scss/partials/_layout.scss */
+.checkbox .input-component input[type="checkbox"] {
+  margin-top: 14px;
+}
+
+/* line 79, ../scss/partials/_layout.scss */
+.radio input[type="radio"] {
+  float: left;
+  margin-top: 10px;
+}
+/* line 85, ../scss/partials/_layout.scss */
+.radio .input-none > .input-box, .radio .input-med > .input-box {
+  float: left;
+}
+
+/* line 89, ../scss/partials/_layout.scss */
+.option-set {
+  display: block;
+}
+/* line 92, ../scss/partials/_layout.scss */
+.option-set label {
+  float: left;
+  width: auto;
+}
+/* line 97, ../scss/partials/_layout.scss */
+.option-set input {
+  clear: left;
+  float: left;
+}
+
+/* line 106, ../scss/partials/_layout.scss */
 .hidden, .collapsed {
   margin-top: 5px;
   display: none;
@@ -559,7 +617,7 @@ fieldset legend {
   width: 100%;
   position: relative;
 }
-/* line 55, ../scss/partials/_layout.scss */
+/* line 114, ../scss/partials/_layout.scss */
 .hidden .close, .collapsed .close {
   display: block;
   position: absolute;
@@ -567,7 +625,7 @@ fieldset legend {
   top: -10px;
   z-index: 10;
 }
-/* line 63, ../scss/partials/_layout.scss */
+/* line 122, ../scss/partials/_layout.scss */
 .hidden .close-bg, .collapsed .close-bg {
   display: block;
   position: absolute;
@@ -576,7 +634,7 @@ fieldset legend {
   z-index: 5;
 }
 
-/* line 73, ../scss/partials/_layout.scss */
+/* line 134, ../scss/partials/_layout.scss */
 .button-container {
   clear: both;
   float: left;
@@ -584,14 +642,14 @@ fieldset legend {
   margin-top: 20px;
 }
 
-/* line 86, ../scss/partials/_layout.scss */
+/* line 147, ../scss/partials/_layout.scss */
 .tooltip-box {
   position: absolute;
   z-index: 10;
   padding: 15px;
   left: 0;
 }
-/* line 92, ../scss/partials/_layout.scss */
+/* line 153, ../scss/partials/_layout.scss */
 .tooltip-box .arrow {
   position: absolute;
   bottom: -20px;
@@ -600,16 +658,16 @@ fieldset legend {
   height: 0px;
   z-index: 100;
 }
-/* line 101, ../scss/partials/_layout.scss */
+/* line 162, ../scss/partials/_layout.scss */
 .tooltip-box p, .tooltip-box li {
   margin-bottom: 10px;
 }
-/* line 105, ../scss/partials/_layout.scss */
+/* line 166, ../scss/partials/_layout.scss */
 .tooltip-box li {
   margin-bottom: 0;
 }
 
-/* line 110, ../scss/partials/_layout.scss */
+/* line 171, ../scss/partials/_layout.scss */
 .tip {
   z-index: 10;
   position: absolute;
@@ -618,7 +676,7 @@ fieldset legend {
   padding: 2px 4px;
 }
 
-/* line 118, ../scss/partials/_layout.scss */
+/* line 179, ../scss/partials/_layout.scss */
 .description {
   clear: both;
   margin: 5px 0;
@@ -630,24 +688,24 @@ fieldset legend {
   box-sizing: border-box;
   padding: 8px;
 }
-/* line 126, ../scss/partials/_layout.scss */
+/* line 187, ../scss/partials/_layout.scss */
 .description p {
   margin: 0;
 }
-/* line 130, ../scss/partials/_layout.scss */
+/* line 191, ../scss/partials/_layout.scss */
 .description.info {
   margin-top: 0;
 }
-/* line 133, ../scss/partials/_layout.scss */
+/* line 194, ../scss/partials/_layout.scss */
 .description.info p {
   margin: 0;
 }
-/* line 137, ../scss/partials/_layout.scss */
+/* line 198, ../scss/partials/_layout.scss */
 .description.info .button {
   margin: 0;
 }
 
-/* line 153, ../scss/partials/_layout.scss */
+/* line 214, ../scss/partials/_layout.scss */
 .label-sm > label {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -658,17 +716,17 @@ fieldset legend {
   width: 100%;
 }
 @media (min-width: 560px) {
-  /* line 153, ../scss/partials/_layout.scss */
+  /* line 214, ../scss/partials/_layout.scss */
   .label-sm > label {
     width: 47.5%;
   }
 }
-/* line 164, ../scss/partials/_layout.scss */
+/* line 225, ../scss/partials/_layout.scss */
 .label-sm.input-long label {
   width: 100%;
 }
 
-/* line 173, ../scss/partials/_layout.scss */
+/* line 234, ../scss/partials/_layout.scss */
 .label-med > label {
   float: left;
   width: 100%;
@@ -679,18 +737,18 @@ fieldset legend {
   padding-top: 15px;
 }
 @media (min-width: 560px) {
-  /* line 173, ../scss/partials/_layout.scss */
+  /* line 234, ../scss/partials/_layout.scss */
   .label-med > label {
     width: 47.5%;
   }
 }
-/* line 184, ../scss/partials/_layout.scss */
+/* line 245, ../scss/partials/_layout.scss */
 .label-med.input-long label {
   width: 100%;
   padding-bottom: 0;
 }
 
-/* line 194, ../scss/partials/_layout.scss */
+/* line 255, ../scss/partials/_layout.scss */
 .label-long > label {
   float: none;
   clear: both;
@@ -701,99 +759,98 @@ fieldset legend {
   box-sizing: border-box;
   padding-top: 15px;
 }
-/* line 202, ../scss/partials/_layout.scss */
+/* line 263, ../scss/partials/_layout.scss */
 .label-long.input-sm .input-box {
   width: auto;
   float: none;
 }
-/* line 207, ../scss/partials/_layout.scss */
+/* line 268, ../scss/partials/_layout.scss */
 .label-long.input-med .input-box {
   float: none;
   width: auto;
   clear: both;
 }
-/* line 211, ../scss/partials/_layout.scss */
+/* line 272, ../scss/partials/_layout.scss */
 .label-long.input-med .input-box input {
   width: auto;
 }
 @media (min-width: 560px) {
-  /* line 211, ../scss/partials/_layout.scss */
+  /* line 272, ../scss/partials/_layout.scss */
   .label-long.input-med .input-box input {
     width: 50%;
   }
 }
 
-/* line 226, ../scss/partials/_layout.scss */
+/* line 287, ../scss/partials/_layout.scss */
 .input-box {
   padding: 10px;
   float: right;
   width: 100%;
 }
 
-/* line 235, ../scss/partials/_layout.scss */
+/* line 296, ../scss/partials/_layout.scss */
 .input-sm > .input-box {
   width: auto;
   clear: both;
   float: none;
 }
 @media (min-width: 560px) {
-  /* line 235, ../scss/partials/_layout.scss */
+  /* line 296, ../scss/partials/_layout.scss */
   .input-sm > .input-box {
     width: 47.5%;
     clear: none;
     float: right;
   }
 }
-/* line 245, ../scss/partials/_layout.scss */
+/* line 306, ../scss/partials/_layout.scss */
 .input-sm > .input-box input[type="text"] {
   width: 75px;
 }
 
-/* line 253, ../scss/partials/_layout.scss */
+/* line 314, ../scss/partials/_layout.scss */
 .input-med > .input-box {
   width: auto;
   float: none;
   clear: both;
 }
 @media (min-width: 560px) {
-  /* line 253, ../scss/partials/_layout.scss */
+  /* line 314, ../scss/partials/_layout.scss */
   .input-med > .input-box {
     float: right;
     clear: none;
     width: 47.5%;
   }
 }
-/* line 263, ../scss/partials/_layout.scss */
+/* line 324, ../scss/partials/_layout.scss */
 .input-med > .input-box input[type="text"] {
   width: 100%;
 }
 
-/* line 271, ../scss/partials/_layout.scss */
+/* line 332, ../scss/partials/_layout.scss */
 .input-long > .input-box {
   clear: both;
-  float: none;
   margin-left: 0;
   margin-right: 0;
-  width: auto;
+  width: 100%;
 }
-/* line 278, ../scss/partials/_layout.scss */
+/* line 338, ../scss/partials/_layout.scss */
 .input-long > .input-box input[type="text"] {
   width: 100%;
 }
 
-/* line 284, ../scss/partials/_layout.scss */
+/* line 344, ../scss/partials/_layout.scss */
 .input-long .label-sm label {
   width: auto;
   padding-bottom: 3px;
 }
 @media (min-width: 560px) {
-  /* line 284, ../scss/partials/_layout.scss */
+  /* line 344, ../scss/partials/_layout.scss */
   .input-long .label-sm label {
     width: 47.5%;
   }
 }
 
-/* line 292, ../scss/partials/_layout.scss */
+/* line 352, ../scss/partials/_layout.scss */
 .advanced .input-box {
   float: none;
   -webkit-box-sizing: border-box;

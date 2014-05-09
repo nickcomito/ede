@@ -37,12 +37,71 @@
 // Input Components
 // ----------------
 
+
+// Checkboxes
+
 .checkbox label {
 	display: inline;
 	width: auto;
 	position: relative;
 	top: 1px;
 }
+
+.checkbox.label-sm > label {
+	border-bottom: 0;
+	padding-top: 15px;
+	width: 100%;
+	@include breakpoint(pond) {
+		// Make room for checkbox input
+		width: 45%;
+	}
+}
+
+.checkbox.label-long > label {
+	width: 85%;
+}
+
+.checkbox input[type="checkbox"] {
+	float: left;
+	margin-top: 18px;
+}
+
+// Reduce label padding on nested input components
+.checkbox .input-component {
+	label {padding-top: 10px;}
+	input[type="checkbox"] {margin-top: 14px;}
+}
+
+
+// Radios
+
+.radio {
+	input[type="radio"] {
+		float: left;
+		margin-top: 10px;
+	}
+
+	.input-none, .input-med {
+		>.input-box {float: left;}
+	}
+}
+
+.option-set {
+	display: block;
+
+	label {
+		float: left;
+		width: auto;
+	}
+
+	input {
+		clear: left;
+		float: left;
+	}
+}
+
+
+// Hidden & Collapsible
 
 .hidden, .collapsed {
 	margin-top: 5px;
@@ -69,7 +128,9 @@
 	}
 }
 
-// For grouping buttons
+
+// Button Container
+
 .button-container {
 	clear: both;
 	float: left;
